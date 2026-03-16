@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BELAJAR KLIK TOMBOL</title>
+        <style>
+            body {font-family: sans-serif; text-align: center; margin-top: 50px;}
+            button {
+                padding: 10px 20px;
+                font-size: 18px;
+                cursor: pointer;
+                background-color: blueviolet;
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+            button:horver {background-color: red;}
+            #Pesan {margin-top: 20px; font-weight: bold; color: green;}
+        </style>
+    </head>
+    <body>
+        <h2>Halo! coba klik tombol ini</h2>
+
+        <button onclick="tampilkanPesan()">Klik Saya</button>
+        <p id="Pesan"></p>
+
+        <script>
+            function tampilkanPesan(){
+            let elemenPesan = document.getElementById("Pesan");
+            elemenPesan.innerHTML = "Hebat Kamu baru saja menjalankan kode JavaScript lewat tombol"
+            alert("Tombol berhasil diklik!")
+            }
+        </script>
+    </body>
+</html>
